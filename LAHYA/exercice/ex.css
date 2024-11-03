@@ -1,0 +1,36 @@
+
+div{
+border: 10px blue double;
+width: 300px;
+height: 300px;
+margin: auto;
+counter-reset: sohail;
+
+}
+h1{
+border: 2px black solid;
+border-radius: 50px;
+width: 250px;
+margin: auto;
+margin-bottom: 15px;
+}
+p{
+    border-radius: 20px;
+    padding: 10px;
+    counter-increment: sohail;
+    padding-right:125px;
+}
+p:hover{
+   background-color: chartreuse;
+}
+p::before{
+content: counter(sohail)"-";
+border: 1px rgb(213, 225, 213) solid;
+width: 3px;
+height: 3px;
+margin: auto;
+border-radius: 20px;
+background: border-box rgb(165, 234, 61);
+color: aliceblue;
+}
+
